@@ -1,0 +1,48 @@
+caption{	
+   font-size:1 em;
+   text-transform:capitalize;
+   color:brown;
+   
+   
+}	
+table {
+  border:0px;
+  color:brown;
+  
+}
+th,td{
+	padding:10px;
+	text-align:center;
+	color:brown;
+}
+tr:first-child th:nth-child(2){
+  color:	#CD853F;
+  font-size:2em;
+  
+}
+/* cibler les tr en position paire */
+tbody tr:nth-child(2n){
+   /* background-color:#D8BFD8; */
+}
+/* cibler les tr en position paire */
+tbody tr:nth-child(2n+1){
+   /* background-color:#DDA0DD; */
+}
+/* cibler la 1er cellule de chaque ligne en position impaire */
+tr:nth-child(odd)>td:first-child {
+   
+   /* color:	#F8F8FF; */
+}
+/* cibler la 1er cellule de chaque ligne en position paire */
+tr:nth-child(even)>td:first-child {
+   /* background-color:	#9932CC; */
+   /* color:	#FFC0CB; */
+}
+tr:nth-child(odd)>td:last-child {
+   /* background-color:#FFC0CB; */
+   /* color:#fff; */
+}
+tr:last-child[rowspan]{
+   border-right:none;
+    border-top:none;
+}

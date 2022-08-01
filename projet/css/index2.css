@@ -1,0 +1,22 @@
+body {
+	font-family:Forte;
+	text-align:left;
+	color:black;
+}
+.social-icons {
+  text-align: left;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:30px;
+  height:30px;
+  margin-right: 20px;
+}

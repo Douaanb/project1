@@ -1,0 +1,69 @@
+.header {
+    background: black;
+    padding-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+nav{
+  text-align:center;
+ font-family:Forte;
+}
+.menu>li{
+	font-family:Forte;
+	display:inline-block ; /* met les "li" en ligne */
+	margin:5px;
+}
+.menu>li>a{
+	font-family:Forte;
+	display:inline-block ;
+	text-decoration:none;
+	color:black;
+	padding:10px;
+	font-size:1.5em;
+}
+.menu>li:hover{
+	font-family:Forte;
+	border-bottom: 4px solid white;/* ajouter une bordure de bas de
+	couleur blue au survol de la souris */
+}
+.services{
+	font-family:Forte;
+	position:relative; /* pour positionner le sous menu 
+	par rapport à son parent"services" */
+}
+.sous-menu{
+	font-family:Forte;
+	list-style-type:none;
+    position: absolute; 
+	left:0;
+	width:100%;
+	max-height:0;/*  pour cacher le sous menu */
+	overflow:hidden; /* pour cacher le contenu de sous menu */
+	transition:max-height 0,5s ease; /* transition appliquée sur
+max-height	la propriéte  */
+    padding:0;
+    margin:5px 0;
+}
+.services:hover>.sous-menu{
+	font-family:Forte;
+	max-height:150px; /* pour afficher le menu aprés le "hover" */
+}
+.sous-menu>li{
+	text-align:center;	
+	line-height:1em;
+	font-family:Forte;
+	font-size:1em;
+	padding:5px 0;
+	border:1px #fff solid;
+}
+.sous-menu>li>a{
+	text-decoration:none;
+	font-family:Forte;
+	display:inline-block ;
+	width:100%;
+	color:brown;
+}
+.sous-menu>li:hover{
+	font-family:Forte;
+	background:white;
+}
